@@ -1,0 +1,233 @@
+/* 
+- Wenge Brown: hsl(30, 10%, 34%)
+
+hsl(30, 18%, 87%)
+
+ */
+
+:root {
+    --ff-primary: "Outfit", sans-serif;
+    --ff-secondary: "Young Serif", serif;
+
+    --fw-normal: 400;
+    --fw-semiBold: 600;
+    --fw-bold: 700;
+
+    --fs-regular: 1rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2rem;
+    --fs-h3: 1.5rem;
+
+    --fc-h1: hsl(24, 5%, 18%);
+    --fc-h2: hsl(14, 45%, 36%);
+    --fc-h3: hsl(332, 51%, 32%);
+    --fc-p: hsl(30, 10%, 34%);
+
+    --clr-html-bg: hsl(30, 54%, 90%);
+    --clr-recipe-bg: hsl(0, 0%, 100%);
+    --clr-prepTime-bg: hsl(330, 100%, 98%);
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    font-size: var(--fs-regular);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-normal);
+    color: var(--fc-p);
+}
+
+body {
+    height: 100%;
+    background-color: var(--clr-html-bg);    
+}
+
+main {
+    background-color: var(--clr-recipe-bg);
+    max-width: 46rem; 
+    border-radius: 2rem;
+    padding-block: 3rem;
+    margin-inline: auto;
+    margin-block: 4rem;
+    transition: all .4s ease;
+}
+
+.main-img {
+    padding-inline: 3rem;
+}
+
+.title {
+    padding-inline: 3rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.8rem;
+}
+
+h1 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-normal);
+    color: var(--fc-h1);
+    padding-block: 1.1rem;
+}
+
+h2 {
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-normal);
+    color: var(--fc-h2);
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    color:var(--fc-h3);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-semiBold);
+}
+
+p {
+    color: var(--fc-p);
+}
+
+.preparationTime {
+    background-color: var(--clr-prepTime-bg);
+    border-radius: 1rem;
+    padding: 1.4rem;
+    margin: 3rem 2.1rem;
+}
+
+.ingredients {
+    padding-inline: 3rem;
+}
+
+.instructions {
+    padding-inline: 3rem;
+}
+
+.nutritions {
+    padding-inline: 3rem;
+}
+
+ul {
+    margin: 0 0 0 1.2rem;
+    line-height: 2rem;
+    list-style-type: "\2022";
+}
+
+ul li {
+    padding-left: 1.5rem;
+}
+
+ul li::marker {
+    color: var(--fc-h3);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.ingredients ul li::before{
+    color: var(--fc-h2);
+}
+
+ol {
+    margin: 0 0 0 1.8rem;
+    line-height: 2rem;
+    list-style-type: decimal;
+}
+
+ol li {
+    padding-left: 0.8rem;
+}
+
+ol li::marker {
+    color: var(--fc-h2);
+    font-weight: var(--fw-semiBold);   
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+.divider {
+    margin: 2rem 3rem;
+
+}
+
+.nutritions .divider {
+    margin: -1rem 0 0 0; 
+}
+
+.nutritions p {
+    margin-bottom: 1rem;
+}
+
+.nutrition {
+    display: inline-block;
+    height: 2.5rem;
+    align-content: center;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.quantity {
+    display: inline-block;
+    font-weight: var(--fw-bold);
+    color: var(--fc-h2);
+    height: 2.5rem;
+    align-content: center;
+    width: 50%;
+}
+
+@media (max-width: 46rem) {
+    
+    img {
+        border-radius: 0;
+    }
+    .main-img {
+        padding: 0;
+    }
+    main {
+        margin-block: 0;
+        border-radius: 0;
+        padding-block: 0;
+        transition: all .4s ease;
+    }
+    h1 {
+        font-size: 2.3rem;
+    }
+    .title {
+        padding-inline: 2rem;            
+    }
+    .preparationTime {
+        padding-inline: 2rem;
+    }
+    .ingredients {
+        padding-inline: 2rem;
+    }
+    .instructions {
+        padding-inline: 2rem;
+    }
+    .nutritions {
+        padding-inline: 2.3rem;
+    }
+}
+
+.attribution { 
+    text-align: center; 
+    color: hsl(30, 10%, 34%);
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
