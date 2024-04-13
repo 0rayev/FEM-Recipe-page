@@ -122,7 +122,7 @@ p {
 }
 
 ul {
-    margin: 0 0 0 1.2rem;
+    margin: 0.5rem 0 0 1.2rem;
     line-height: 2rem;
     list-style-type: "\2022";
 }
@@ -162,7 +162,7 @@ ol li::marker {
 
 .divider {
     margin: 2rem 3rem;
-
+    color: var(--fc-p);
 }
 
 .nutritions .divider {
@@ -176,9 +176,8 @@ ol li::marker {
 .nutrition {
     display: inline-block;
     height: 2.5rem;
-    align-content: center;
     width: 50%;
-    padding-left: 2rem;
+    padding: 1rem 2rem;
 }
 
 .quantity {
@@ -186,7 +185,6 @@ ol li::marker {
     font-weight: var(--fw-bold);
     color: var(--fc-h2);
     height: 2.5rem;
-    align-content: center;
     width: 50%;
 }
 
